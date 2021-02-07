@@ -1,0 +1,126 @@
+krunal@krunal:~/Desktop/VOIS$ cat /etc/shells
+# /etc/shells: valid login shells
+/bin/sh
+/bin/bash
+/bin/rbash
+/bin/dash
+krunal@krunal:~/Desktop/VOIS$ echo $SHELL
+/bin/bash
+krunal@krunal:~/Desktop/VOIS$ bash man
+/usr/bin/man: /usr/bin/man: cannot execute binary file
+krunal@krunal:~/Desktop/VOIS$ man clear
+krunal@krunal:~/Desktop/VOIS$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+krunal@krunal:~/Desktop/VOIS$ man clear
+krunal@krunal:~/Desktop/VOIS$ 
+krunal@krunal:~/Desktop/VOIS$ pwd
+/home/krunal/Desktop/VOIS
+krunal@krunal:~/Desktop/VOIS$ `
+> ~
+> 
+> `
+bash: /home/krunal: Is a directory
+krunal@krunal:~/Desktop/VOIS$ ~
+bash: /home/krunal: Is a directory
+krunal@krunal:~/Desktop/VOIS$ cd ../
+krunal@krunal:~/Desktop$ cd VOIS
+krunal@krunal:~/Desktop/VOIS$ cd
+krunal@krunal:~$ cd Desktop/
+krunal@krunal:~/Desktop$ cd VOIS/
+krunal@krunal:~/Desktop/VOIS$ cd ..
+krunal@krunal:~/Desktop$ cd VOIS/
+krunal@krunal:~/Desktop/VOIS$ cd ~/Desktop/
+krunal@krunal:~/Desktop$ ls
+ 1                             CG             Other           shared
+'Assign 2Socket programming'  'CN Assign 3'   PT72Installer   VOIS
+krunal@krunal:~/Desktop$ ls -a
+ .    1                             CG             Other           shared
+ ..  'Assign 2Socket programming'  'CN Assign 3'   PT72Installer   VOIS
+krunal@krunal:~/Desktop$ ls -S
+ 1                             CG             Other           shared
+'Assign 2Socket programming'  'CN Assign 3'   PT72Installer   VOIS
+krunal@krunal:~/Desktop$ ls -t
+ VOIS           CG                            Other           shared
+'CN Assign 3'  'Assign 2Socket programming'   PT72Installer   1
+krunal@krunal:~/Desktop$ ls -l
+total 76
+-rwxr-xr-x 1 krunal krunal 48912 Mar 27 00:22  1
+drwxr-xr-x 2 krunal krunal  4096 Aug  9 19:47 'Assign 2Socket programming'
+drwxrwxr-x 2 krunal krunal  4096 Sep  8 09:06  CG
+drwxrwxr-x 5 krunal krunal  4096 Sep  8 09:07 'CN Assign 3'
+drwxrwxr-x 4 krunal krunal  4096 Aug  4 08:59  Other
+drwxr-xr-x 2 krunal krunal  4096 Jul 28 16:14  PT72Installer
+drwxrwxrwx 2 krunal krunal  4096 Jul 28 15:01  shared
+drwxrwxr-x 2 krunal krunal  4096 Sep 14 16:31  VOIS
+krunal@krunal:~/Desktop$ 
+krunal@krunal:~/Desktop$ cd VOIS/
+krunal@krunal:~/Desktop/VOIS$ mkdir test
+krunal@krunal:~/Desktop/VOIS$ ls
+test
+krunal@krunal:~/Desktop/VOIS$ mkdir -p t1/t2/t3
+krunal@krunal:~/Desktop/VOIS$ ls
+t1  test
+krunal@krunal:~/Desktop/VOIS$ ls t1
+t2
+krunal@krunal:~/Desktop/VOIS$ ls t3
+ls: cannot access 't3': No such file or directory
+krunal@krunal:~/Desktop/VOIS$ ls t2
+ls: cannot access 't2': No such file or directory
+krunal@krunal:~/Desktop/VOIS$ ls t1/t2
+t3
+krunal@krunal:~/Desktop/VOIS$ ls t1/t2/t3
+krunal@krunal:~/Desktop/VOIS$ rmdir t1
+rmdir: failed to remove 't1': Directory not empty
+krunal@krunal:~/Desktop/VOIS$ rmdir test
+krunal@krunal:~/Desktop/VOIS$ rm -ri t1
+rm: descend into directory 't1'? y
+rm: descend into directory 't1/t2'? y
+rm: remove directory 't1/t2/t3'? y
+rm: remove directory 't1/t2'? y
+rm: remove directory 't1'? y
+krunal@krunal:~/Desktop/VOIS$ mkdir -p t1/t2/t3
+krunal@krunal:~/Desktop/VOIS$ rm -rf t1
+krunal@krunal:~/Desktop/VOIS$ 
+

@@ -1,0 +1,39 @@
+krunal@krunal:~/Desktop/VOIS$ man cat
+krunal@krunal:~/Desktop/VOIS$ touch f1
+krunal@krunal:~/Desktop/VOIS$ ls -lrt
+total 4
+-rw-rw-r-- 1 krunal krunal 3089 Sep 14 17:18 'Day 1 linux basics'
+-rw-r--r-- 1 krunal krunal    0 Sep 15 15:51  f1
+krunal@krunal:~/Desktop/VOIS$ rm f1
+krunal@krunal:~/Desktop/VOIS$ cat f1.txt
+cat: f1.txt: No such file or directory
+krunal@krunal:~/Desktop/VOIS$ touch f1.txt
+krunal@krunal:~/Desktop/VOIS$ cat f1.txt
+krunal@krunal:~/Desktop/VOIS$ cat > f1.txt
+hi
+^C
+krunal@krunal:~/Desktop/VOIS$ chmod 742 f1.txt
+krunal@krunal:~/Desktop/VOIS$ ls -lrt
+total 8
+-rw-rw-r-- 1 krunal krunal 3089 Sep 14 17:18 'Day 1 linux basics'
+-rwxr---w- 1 krunal krunal    3 Sep 15 15:54  f1.txt
+krunal@krunal:~/Desktop/VOIS$ ps
+  PID TTY          TIME CMD
+ 2332 pts/0    00:00:00 bash
+ 2526 pts/0    00:00:00 ps
+krunal@krunal:~/Desktop/VOIS$ nano ait.sh
+krunal@krunal:~/Desktop/VOIS$ cat ait.sh
+echo hi
+
+krunal@krunal:~/Desktop/VOIS$ ls -lrt ait.sh
+-rw-r--r-- 1 krunal krunal 9 Sep 15 16:20 ait.sh
+krunal@krunal:~/Desktop/VOIS$ chmod a+x ait.sh
+krunal@krunal:~/Desktop/VOIS$ ls -lrt ait.sh
+-rwxr-xr-x 1 krunal krunal 9 Sep 15 16:20 ait.sh
+krunal@krunal:~/Desktop/VOIS$ ./ait.sh
+hi
+krunal@krunal:~/Desktop/VOIS$ chmod a-x ait.sh
+krunal@krunal:~/Desktop/VOIS$ ls -lrt ait.sh
+-rw-r--r-- 1 krunal krunal 9 Sep 15 16:20 ait.sh
+krunal@krunal:~/Desktop/VOIS$ sh ait.sh
+hi
